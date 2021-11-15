@@ -1,0 +1,21 @@
+from sqlalchemy import create_engine,MetaData
+
+
+engine = create_engine("mysql+pymysql://root@localhost:3306/test")
+meta = MetaData ()
+
+conn = engine.connect()
+
+
+
+import os
+
+
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import sessionmaker
+
+
+
+
+
+
